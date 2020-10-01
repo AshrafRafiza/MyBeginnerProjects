@@ -1,0 +1,121 @@
+body {
+    background: rgb(58, 58, 58);
+    color: white;
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    background-image: url("quiche.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    height: 400px;
+    background-color: black;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .logo a {
+    background-image: url("logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    text-indent: -999999999px;
+    top: -30px;
+    width: 300px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+}
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 732px) {
+    header {
+        height: 250px;
+        background-position: 0 -70px;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+
+    header .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 200px;
+        background-position: 0 -0px;
+    }
+}
+
+/* FEATURES */
+
+.features {
+    background: white;
+    color: grey;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: grey 0 0 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.features figure {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+/* RESPONSIVE RULES 
+@media screen and (max-width: 732px) {
+    .features {
+        display: block;
+    }
+} */
+
+
+/* FOOTER */
+
+footer {
+    background: black;
+    color: grey;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 20px;
+}
+
